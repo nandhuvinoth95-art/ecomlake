@@ -16,7 +16,7 @@ The pipeline continuously ingests 8 days of transactional data from AWS S3, clea
 
 ## Architecture & Tech Stack
 
-![Medallion Architecture Flow](/Workspace/Repos/nandhuvinoth95@gmail.com/ecomlake/architecture/work_flow_architecture.png)
+![Medallion Architecture Flow](https://dbc-d9fd1b52-c0ba.cloud.databricks.com/editor/files/147832989132220?o=1606523562666846)
 
 *   **Cloud Storage:** AWS S3 (Landing Zone)
 *   **Compute & Orchestration:** Databricks Workflows (Job Clusters)
@@ -38,22 +38,22 @@ The pipeline continuously ingests 8 days of transactional data from AWS S3, clea
 ### 1. The Cash Flow Engine (GMV vs. NMV)
 *Tracks the discrepancy between Gross Merchandise Value and Net Merchandise Value caused by payment gateway failures across an 8-day continuous trend.*
 Cash Flow Dashboard
-*(![The Cash Flow Engine](/Workspace/Repos/nandhuvinoth95@gmail.com/ecomlake/Dashboard/The Cash Flow Engine.png))*
+*(![The Cash Flow Engine](https://dbc-d9fd1b52-c0ba.cloud.databricks.com/editor/files/1212815156811691?o=1606523562666846))*
 
 ### 2. Operational SLAs & Seller Performance
 *Visualizes shipment delivery SLAs, return trends, and isolates top-performing sellers across varying tiers.*
 Seller Performance
-*(![Seller Performance](/Workspace/Repos/nandhuvinoth95@gmail.com/ecomlake/Dashboard/Seller Performance.png))*
+*(![Seller Performance](https://dbc-d9fd1b52-c0ba.cloud.databricks.com/editor/files/1212815156811690?o=1606523562666846))*
 
 ### 3. Customer Lifetime Value (CLV) & Tier Segmentation
 *Analyzes purchasing behavior to calculate Customer Lifetime Value (CLV), segmenting users into loyalty tiers (Bronze, Silver, Gold, Platinum) and identifying the highest-value customer cohorts to drive targeted retention strategies*
 Customer Value
-*(![Customer Lifetime Value](/Workspace/Repos/nandhuvinoth95@gmail.com/ecomlake/Dashboard/Customer Value.png))*
+*(![Customer Lifetime Value](https://dbc-d9fd1b52-c0ba.cloud.databricks.com/editor/files/1212815156811697?o=1606523562666846))*
 
 ### 4. Inventory Health & Stockout Risk Map
 *Visualizes real-time stock levels across multiple warehouses, calculating the stockout risk percentage by comparing current available inventory against dynamic reorder thresholds to prevent lost sales.*
 Stock Risk Map
-*(![Stock Risk Map](/Workspace/Repos/nandhuvinoth95@gmail.com/ecomlake/Dashboard/Stock Risk Map.png))*
+*(![Stock Risk Map](https://dbc-d9fd1b52-c0ba.cloud.databricks.com/editor/files/1212815156811689?o=1606523562666846))*
 
 ---
 
@@ -68,10 +68,10 @@ ecomlake/
 │   └── work_flow.png                         # Databricks Job DAG execution graph
 │
 ├── Dashboard/                                # BI & Visualization Exports
-│   ├── Customer Value.png  
-│   ├── The Cash Flow.png     
-│   ├── Stockout Risk Map.png           
-│   └── Performance Matrix.png           
+│   ├── Customer_Value.png  
+│   ├── The_Cash_Flow_Engine.png     
+│   ├── Stockout_Risk_Map.png           
+│   └── Performance_Matrix.png           
 │
 ├── setup/
 │   └── create_delete_test_databases.py       # Environment & catalog initialization
