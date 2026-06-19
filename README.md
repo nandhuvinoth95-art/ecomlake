@@ -16,7 +16,7 @@ The pipeline continuously ingests 8 days of transactional data from AWS S3, clea
 
 ## Architecture & Tech Stack
 
-![Medallion Architecture Flow](https://dbc-d9fd1b52-c0ba.cloud.databricks.com/editor/files/147832989132220?o=1606523562666846)
+![Medallion Architecture Flow](architecture/work_flow_architecture.png)
 
 *   **Cloud Storage:** AWS S3 (Landing Zone)
 *   **Compute & Orchestration:** Databricks Workflows (Job Clusters)
@@ -38,22 +38,21 @@ The pipeline continuously ingests 8 days of transactional data from AWS S3, clea
 ### 1. The Cash Flow Engine (GMV vs. NMV)
 *Tracks the discrepancy between Gross Merchandise Value and Net Merchandise Value caused by payment gateway failures across an 8-day continuous trend.*
 Cash Flow Dashboard
-*(![The Cash Flow Engine](https://dbc-d9fd1b52-c0ba.cloud.databricks.com/editor/files/1212815156811691?o=1606523562666846))*
+*(![The Cash Flow Engine](Dashboard/The_Cash_Flow_Engine.png))*
 
 ### 2. Operational SLAs & Seller Performance
 *Visualizes shipment delivery SLAs, return trends, and isolates top-performing sellers across varying tiers.*
 Seller Performance
-*(![Seller Performance](https://dbc-d9fd1b52-c0ba.cloud.databricks.com/editor/files/1212815156811690?o=1606523562666846))*
-
+*(![Seller Performance](Dashboard/Performance_Matrix.png))*
 ### 3. Customer Lifetime Value (CLV) & Tier Segmentation
 *Analyzes purchasing behavior to calculate Customer Lifetime Value (CLV), segmenting users into loyalty tiers (Bronze, Silver, Gold, Platinum) and identifying the highest-value customer cohorts to drive targeted retention strategies*
 Customer Value
-*(![Customer Lifetime Value](https://dbc-d9fd1b52-c0ba.cloud.databricks.com/editor/files/1212815156811697?o=1606523562666846))*
+*(![Customer Lifetime Value](Dashboard/Customer_Value.png))*
 
 ### 4. Inventory Health & Stockout Risk Map
 *Visualizes real-time stock levels across multiple warehouses, calculating the stockout risk percentage by comparing current available inventory against dynamic reorder thresholds to prevent lost sales.*
 Stock Risk Map
-*(![Stock Risk Map](https://dbc-d9fd1b52-c0ba.cloud.databricks.com/editor/files/1212815156811689?o=1606523562666846))*
+*(![Stock Risk Map](Dashboard/Stockout_Risk_Map.png))*
 
 ---
 
